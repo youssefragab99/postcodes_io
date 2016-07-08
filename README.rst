@@ -33,7 +33,7 @@ TODOs
 
 * Add more endpoints
 * Documentation
-* Unittests
+* Proper unit tests
 * Add instructions for Docker image
 
 Credits
