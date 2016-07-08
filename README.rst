@@ -28,7 +28,10 @@ Python client to connect to Postcodes.io API
 Features
 --------
 
-* TODO
+* Add more endpoints
+* Documentation
+* Unittests
+* Add instructions for Docker image
 
 Credits
 ---------
