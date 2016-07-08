@@ -8,16 +8,13 @@ test_postcodes_io
 Tests for `postcodes_io` module.
 """
 
-
 import sys
 import unittest
 
-from postcodes_io import postcodes_io
-
+import postcodes_io as pio
 
 
 class TestPostcodes_io(unittest.TestCase):
-
     def setUp(self):
         pass
 
@@ -25,8 +22,7 @@ class TestPostcodes_io(unittest.TestCase):
         pass
 
     def test_000_something(self):
-        pass
-
+        self.assertIsNotNone(pio.Postcodes().get('SW1A 1AA'))
 
 
 if __name__ == '__main__':
