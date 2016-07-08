@@ -11,7 +11,7 @@ class Postcodes:
     def get_many(self, postcodes):
         return http_post(self.end_point, data={'postcodes': postcodes})
 
-    def nearest(self, latitude, longitude):
+    def nearest_by_geo(self, latitude, longitude):
         return http_get(self.end_point, params={'latitude': latitude, 'longitude': longitude})
 
     def validate(self, postcode):
