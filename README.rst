@@ -1,5 +1,5 @@
 ==================================
-Postcodes.io Python Client - ALPHA
+Postcodes.io Python Client - alpha
 ==================================
 
 
@@ -26,6 +26,9 @@ Python client to connect to Postcodes.io API
 
 
 Features
+--------
+
+TODOs
 --------
 
 * Add more endpoints
