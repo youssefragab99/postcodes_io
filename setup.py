@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='postcodes_io',
-    version='0.1.0',
+    version='0.2.0',
     description="Python client to connect to Postcodes.io API",
     long_description=readme + '\n\n' + history,
     author="James Ho",
