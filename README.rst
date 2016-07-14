@@ -27,14 +27,48 @@ Python client to connect to Postcodes.io API
 
 Features
 --------
+* Supports python 3.x (not yet python 2.x, sorry!)
+* Response in Python native list and dict types
+* Supports free http://postcodes.io/postcodes REST service and self-hosted service (See documentation for installation details)
+
+Quick Start
+-----------
+```
+pip install postcodes_io
+python
+
+>>> from postcodes_io import Postcodes
+>>> pio = Postcodes()
+>>> postcode = pio.get('SW1A 1AA')
+{'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
+```
+
+Self-hosted Service using Docker
+--------------------------------
+1. Pull docker image
+```
+docker pull randomvariable/docker-postcodes.io
+```
+
+2. Run docker container as a daemon
+```
+docker run -p 8000:8000 -d randomvariable/docker-postcodes.io
+```
+
+3. Execute API using hosts
+```
+>>> from postcodes_io import Postcodes
+>>> Postcodes('http://localhost:8000').get('SW1A 1AA')
+{'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
+
+```
 
 TODOs
 --------
 
 * Add more endpoints
 * Documentation
-* Proper unit tests
-* Add instructions for Docker image
+* Proper isolated unit tests
 
 Credits
 ---------

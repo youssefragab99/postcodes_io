@@ -10,7 +10,7 @@ try:
 except AttributeError:
     # py3
     import http.client
-    HTTPStatus = http.client.HTTPStatus
+    HTTPStatus = http.client
 
 except ImportError:
     # py2
