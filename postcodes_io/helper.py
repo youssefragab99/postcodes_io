@@ -3,9 +3,14 @@ import functools
 import requests
 
 try:
-    # py3
+    # py3.5
     import http
     HTTPStatus = http.HTTPStatus
+
+except AttributeError:
+    # py3
+    import http.client
+    HTTPStatus = http.client.HTTPStatus
 
 except ImportError:
     # py2
