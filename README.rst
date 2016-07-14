@@ -33,35 +33,33 @@ Features
 
 Quick Start
 -----------
-```
-pip install postcodes_io
-python
+Install python package::
+    pip install postcodes_io
+    python
 
->>> from postcodes_io import Postcodes
->>> pio = Postcodes()
->>> postcode = pio.get('SW1A 1AA')
-{'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
-```
+.. code-block:: python
+    from postcodes_io import Postcodes
+    pio = Postcodes()
+    postcode = pio.get('SW1A 1AA')
+    {'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
 
 Self-hosted Service using Docker
 --------------------------------
-1. Pull docker image
-```
-docker pull randomvariable/docker-postcodes.io
-```
+1. Pull docker image::
 
-2. Run docker container as a daemon
-```
-docker run -p 8000:8000 -d randomvariable/docker-postcodes.io
-```
+    docker pull randomvariable/docker-postcodes.io
+
+2. Run docker container as a daemon::
+
+    docker run -p 8000:8000 -d randomvariable/docker-postcodes.io
 
 3. Execute API using hosts
-```
->>> from postcodes_io import Postcodes
->>> Postcodes('http://localhost:8000').get('SW1A 1AA')
+
+.. code-block:: python
+from postcodes_io import Postcodes
+Postcodes('http://localhost:8000').get('SW1A 1AA')
 {'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
 
-```
 
 TODOs
 --------
