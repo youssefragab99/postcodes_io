@@ -33,10 +33,12 @@ Features
 
 Quick Start
 -----------
-Install python package::
+Install python package:
 
-    pip install postcodes_io
-    python
+.. code-block:: console
+
+    $ pip install postcodes_io
+    $ python
 
 
 .. code-block:: python
