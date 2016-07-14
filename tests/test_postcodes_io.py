@@ -13,7 +13,8 @@ import unittest
 
 import postcodes_io as pio
 
-
+# TODO: patch out API endpoints
+# TODO: write some proper tests wth mock response
 class TestPostcodes_io(unittest.TestCase):
     def setUp(self):
         pass
