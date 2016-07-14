@@ -34,10 +34,13 @@ Features
 Quick Start
 -----------
 Install python package::
+
     pip install postcodes_io
     python
 
+
 .. code-block:: python
+
     from postcodes_io import Postcodes
     pio = Postcodes()
     postcode = pio.get('SW1A 1AA')
@@ -56,9 +59,10 @@ Self-hosted Service using Docker
 3. Execute API using hosts
 
 .. code-block:: python
-from postcodes_io import Postcodes
-Postcodes('http://localhost:8000').get('SW1A 1AA')
-{'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
+
+    from postcodes_io import Postcodes
+    Postcodes('http://localhost:8000').get('SW1A 1AA')
+    {'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
 
 
 TODOs
