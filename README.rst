@@ -44,7 +44,6 @@ Install python package::
     from postcodes_io import Postcodes
     pio = Postcodes()
     postcode = pio.get('SW1A 1AA')
-    {'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
 
 Self-hosted Service using Docker
 --------------------------------
@@ -61,9 +60,7 @@ Self-hosted Service using Docker
 .. code-block:: python
 
     from postcodes_io import Postcodes
-    Postcodes('http://localhost:8000').get('SW1A 1AA')
-    {'northings': 179645, 'outcode': 'SW1A', 'quality': 1, 'latitude': 51.5010091564599,  ....
-
+    postcode = Postcodes('http://localhost:8000').get('SW1A 1AA')
 
 TODOs
 --------
