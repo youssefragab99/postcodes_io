@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from .resource import Postcodes
+from .resource import PostcodesIO
 
 __author__ = 'James Ho'
 __email__ = 'jho@neverlimited.uk'
