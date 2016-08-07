@@ -23,7 +23,7 @@ class TestPostcodes_io(unittest.TestCase):
         pass
 
     def test_000_something(self):
-        self.assertIsNotNone(pio.Postcodes().get('SW1A 1AA'))
+        self.assertIsNotNone(pio.PostcodesIO().get('SW1A 1AA'))
 
 
 if __name__ == '__main__':
