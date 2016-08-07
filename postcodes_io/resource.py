@@ -1,7 +1,7 @@
 from postcodes_io.helper import http_get, http_post
 
 
-class Postcodes:
+class PostcodesIO:
     """
     Postcodes resource
 

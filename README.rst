@@ -43,8 +43,8 @@ Install python package:
 
 .. code-block:: python
 
-    from postcodes_io import Postcodes
-    pio = Postcodes()
+    from postcodes_io import PostcodesIO
+    pio = PostcodesIO()
     postcode = pio.get('SW1A 1AA')
 
 Self-hosted Service using Docker
@@ -61,8 +61,8 @@ Self-hosted Service using Docker
 
 .. code-block:: python
 
-    from postcodes_io import Postcodes
-    postcode = Postcodes('http://localhost:8000').get('SW1A 1AA')
+    from postcodes_io import PostcodesIO
+    postcode = PostcodesIO('http://localhost:8000').get('SW1A 1AA')
 
 TODOs
 --------
