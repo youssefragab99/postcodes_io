@@ -18,7 +18,7 @@ Postcodes.io Python Client - alpha
      :alt: Updates
 
 
-Python client to connect to Postcodes.io API
+Python client to connect to Postcodes.io webservice
 
 
 * Free software: MIT license
@@ -29,7 +29,7 @@ Features
 --------
 * Supports python 3.x (not yet python 2.x, sorry!)
 * Response in Python native list and dict types
-* Supports free http://postcodes.io/postcodes REST service and self-hosted service (See documentation for installation details)
+* Supports free http://postcodes.io REST service and self-hosted service (See documentation for self-hosted installation details)
 
 Quick Start
 -----------
@@ -42,7 +42,7 @@ Install python package:
 
 
 .. code-block:: python
-
+    # Connects to http://postcodes.io
     from postcodes_io import PostcodesIO
     pio = PostcodesIO()
     postcode = pio.get('SW1A 1AA')
@@ -61,6 +61,7 @@ Self-hosted Service using Docker
 
 .. code-block:: python
 
+    # Connects to self hosted PostcodesIO instance.
     from postcodes_io import PostcodesIO
     postcode = PostcodesIO('http://localhost:8000').get('SW1A 1AA')
 
