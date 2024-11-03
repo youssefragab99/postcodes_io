@@ -81,3 +81,11 @@ class PostcodesIO:
         :return:
         """
         return http_get(self.end_point, params={'q': postcode})
+
+    def random(self):
+        """
+        Get a random postcode
+
+        :return: dict of postcode
+        """
+        return http_get('{}/random/postcodes'.format(self.end_point))    
